@@ -2,6 +2,9 @@
     "name": "hexlet/code",
     "bin": ["bin/brain-games"],
     "autoload": {
+	"files": [
+	  "src/Cli.php"
+          ],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         }
@@ -14,5 +17,7 @@
     ],
     "description": "hexlet code",
     "license": "MIT",
-    "require": {}
+    "require": {
+      "wp-cli/php-cli-tools": "dev-master"
+}
 }
