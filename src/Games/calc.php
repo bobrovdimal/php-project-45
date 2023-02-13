@@ -7,19 +7,19 @@ use function BrainGames\Engine\playGame;
 define("DESCRIPTION_CALC", "What is the result of the expression?");
 define("SIGNS", ['+', '-', '*']);
 
-function getCorrectAnswer ($num1, $num2, $sign)
+function getCorrectAnswer($num1, $num2, $sign)
 {
     switch ($sign) {
         case '+':
             return $num1 + $num2;
         case '-':
             return $num1 - $num2;
-        case'*':
+        case '*':
             return $num1 * $num2;
     }
 }
 
-function startCalc() 
+function startCalc()
 {
     $getRoundData = function () {
         $num1 = rand(1, 100);
@@ -29,5 +29,5 @@ function startCalc()
         $correctAnswer = (string) getCorrectAnswer($num1, $num2, $sign);
         return [$question, $correctAnswer];
     };
-    playGame (DESCRIPTION_CALC, $getRoundData);
+    playGame(DESCRIPTION_CALC, $getRoundData);
 }
