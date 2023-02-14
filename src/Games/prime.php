@@ -6,7 +6,7 @@ use function BrainGames\Engine\playGame;
 
 define("DESCRIPTION_PRIME", 'Answer "yes" if given number is prime. Otherwise answer "no".');
 
-function isPrime($number)
+function isPrime(int $number)
 {
     if ($number < 2) {
         return false;

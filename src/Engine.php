@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const GAMEROUNDS = 3;
 
-function playGame($description, $getRoundData)
+function playGame(string $description, callable $getRoundData)
 {
     line("/$description/\n");
     line('Welcome to the Brain Game!');

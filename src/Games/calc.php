@@ -7,7 +7,7 @@ use function BrainGames\Engine\playGame;
 define("DESCRIPTION_CALC", "What is the result of the expression?");
 define("SIGNS", ['+', '-', '*']);
 
-function getCorrectAnswer($num1, $num2, $sign)
+function getCorrectAnswer(int $num1, int $num2, array $sign)
 {
     switch ($sign) {
         case '+':
