@@ -17,10 +17,7 @@
           "src/Games/gcd.php",
           "src/Games/progression.php",
           "src/Games/prime.php"
-          ],
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
+          ]
     },
     "authors": [
         {
