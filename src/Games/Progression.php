@@ -1,21 +1,21 @@
 <?php
 
-namespace BrainGames\Games\progression;
+namespace BrainGames\Games\Progression;
 
 use function BrainGames\Engine\playGame;
 
-define("DESCRIPTION_PROG", 'What number is missing in the progression?');
-define("MINLENGTH", 5);
-define("MAXLENGTH", 10);
+CONST DESCRIPTION_PROG = "What number is missing in the progression?";
+CONST MINLENGTH = 5;
+CONST MAXLENGTH = 10;
 
 function getProgression()
 {
     $length = rand(MINLENGTH, MAXLENGTH);
     $base = rand(1, 100);
-    $difference = rand(1, 10);
+    $stepProgression = rand(1, 10);
     $progression = [];
     for ($i = 0; $i < $length; $i++) {
-        $progression[] = $base + (($i + 1) * $difference);
+        $progression[] = $base + (($i + 1) * $stepProgression);
     }
     return $progression;
 }

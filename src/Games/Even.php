@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\Games\even;
+namespace BrainGames\Games\Even;
 
 use function BrainGames\Engine\playGame;
 
-const DESCRIPTION = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function isEven(int $num)
 {

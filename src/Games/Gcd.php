@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\Games\gcd;
+namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Engine\playGame;
 
-define("DESCRIPTION_GCD", 'Find the greatest common divisor of given numbers.');
+CONST DESCRIPTION_GCD = "Find the greatest common divisor of given numbers.";
 
 function gcd(int $divider1, int $divider2): int
 {
