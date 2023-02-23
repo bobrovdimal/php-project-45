@@ -17,7 +17,7 @@ function getCorrectAnswer(int $num1, int $num2, string $sign)
         case '*':
             return $num1 * $num2;
         default:
-            throw new Error('Unknown sign!');
+            return 'Unknown sign!';
     }
 }
 
