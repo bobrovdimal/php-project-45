@@ -4,7 +4,7 @@ namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Engine\playGame;
 
-CONST DESCRIPTION_GCD = "Find the greatest common divisor of given numbers.";
+const DESCRIPTION_GCD = "Find the greatest common divisor of given numbers.";
 
 function gcd(int $divider1, int $divider2): int
 {

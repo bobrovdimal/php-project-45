@@ -4,8 +4,8 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\playGame;
 
-CONST DESCRIPTION_CALC = "What is the result of the expression?";
-CONST SIGNS = ['+', '-', '*'];
+const DESCRIPTION_CALC = "What is the result of the expression?";
+const SIGNS = ['+', '-', '*'];
 
 function getCorrectAnswer(int $num1, int $num2, string $sign)
 {
@@ -17,7 +17,7 @@ function getCorrectAnswer(int $num1, int $num2, string $sign)
         case '*':
             return $num1 * $num2;
         default:
-            throw new Error(`Unknown order state: '${order.state}'!`);
+            throw new Error('Unknown sign!');
     }
 }
 
