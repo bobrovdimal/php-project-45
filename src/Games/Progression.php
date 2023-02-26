@@ -5,12 +5,12 @@ namespace BrainGames\Games\Progression;
 use function BrainGames\Engine\playGame;
 
 const DESCRIPTION_PROG = "What number is missing in the progression?";
-const MINLENGTH = 5;
-const MAXLENGTH = 10;
+const MIN_LENGTH = 5;
+const MAX_LENGTH = 10;
 
 function getProgression()
 {
-    $length = rand(MINLENGTH, MAXLENGTH);
+    $length = rand(MIN_LENGTH, MAX_LENGTH);
     $base = rand(1, 100);
     $stepProgression = rand(1, 10);
     $progression = [];
@@ -20,7 +20,7 @@ function getProgression()
     return $progression;
 }
 
-function startProg()
+function start(): void
 {
     $getRoundData = function () {
         $progression = getProgression();

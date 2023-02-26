@@ -17,11 +17,11 @@ function getCorrectAnswer(int $num1, int $num2, string $sign)
         case '*':
             return $num1 * $num2;
         default:
-            return 'Unknown sign!';
+            throw new Exception('Unknown sign!');
     }
 }
 
-function startCalc()
+function start(): void
 {
     $getRoundData = function () {
         $num1 = rand(1, 100);

@@ -14,7 +14,7 @@ function gcd(int $divider1, int $divider2): int
     return gcd($divider2, $divider1 % $divider2);
 }
 
-function startGcd()
+function start(): void
 {
     $getRoundData = function () {
         $num1 = rand(1, 100);
