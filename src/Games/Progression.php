@@ -4,9 +4,11 @@ namespace BrainGames\Games\Progression;
 
 use function BrainGames\Engine\playGame;
 
-const DESCRIPTION_PROG = "What number is missing in the progression?";
+const DESCRIPTION = "What number is missing in the progression?";
 const MIN_LENGTH = 5;
 const MAX_LENGTH = 10;
+
+
 
 function getProgression()
 {
@@ -20,6 +22,8 @@ function getProgression()
     return $progression;
 }
 
+
+
 function start(): void
 {
     $getRoundData = function () {
@@ -30,5 +34,5 @@ function start(): void
         $question = implode(' ', $progression);
         return [$question, $correctAnswer];
     };
-    playGame(DESCRIPTION_PROG, $getRoundData);
+    playGame(DESCRIPTION, $getRoundData);
 }

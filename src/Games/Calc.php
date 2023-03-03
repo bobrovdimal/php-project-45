@@ -4,8 +4,10 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\playGame;
 
-const DESCRIPTION_CALC = "What is the result of the expression?";
+const DESCRIPTION = "What is the result of the expression?";
 const SIGNS = ['+', '-', '*'];
+
+
 
 function getCorrectAnswer(int $num1, int $num2, string $sign)
 {
@@ -21,6 +23,8 @@ function getCorrectAnswer(int $num1, int $num2, string $sign)
     }
 }
 
+
+
 function start(): void
 {
     $getRoundData = function () {
@@ -31,5 +35,5 @@ function start(): void
         $correctAnswer = (string) getCorrectAnswer($num1, $num2, $sign);
         return [$question, $correctAnswer];
     };
-    playGame(DESCRIPTION_CALC, $getRoundData);
+    playGame(DESCRIPTION, $getRoundData);
 }
